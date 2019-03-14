@@ -15,9 +15,6 @@ module.exports = {
             test: /\.jsx?$/,
             include: /node_modules/,
             use: ['react-hot-loader/webpack'],
-        }, {
-            test: /\.md$/,
-            use: 'ignore-loader'
         }]
     },
     plugins: [

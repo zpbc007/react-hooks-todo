@@ -10,11 +10,16 @@
       "moduleResolution": "node",
       "experimentalDecorators": true,
       "emitDecoratorMetadata": true,
-      "baseUrl": "./src",
       "declaration": true,
       "strictNullChecks": false,
       "allowSyntheticDefaultImports": true,
-      "esModuleInterop": true
+      "esModuleInterop": true,
+      "baseUrl": "./src",
+      "paths": {
+        "@comp/*": ["./components/*"],
+        "@utils/*": ["./utils/*"],
+        "@views/*": ["./views/*"]
+      }
   },
   "include": [
       "./src/**/*"
